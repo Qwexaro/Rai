@@ -1,0 +1,27 @@
+<script> 
+ 
+    let arr = [] 
+    let arr_min = [] 
+    let arr_max = [] 
+ 
+    for(let i = 0;i < 45; i++) 
+    { 
+        arr.push(Math.floor(Math.random()*200 - 100 )) 
+    } 
+ 
+    console.log("Moi massiv:\n" + arr) 
+  
+    for(let j = 0; j < arr.length; j++) 
+    { 
+        if(arr[j] > 0) arr_max.push(arr[j]) 
+ 
+        if(arr[j] < 0) arr_min.push(arr[j]) 
+ 
+        if(arr[j] = 0) arr_zero.push(arr[j]) 
+    } 
+ 
+    console.log("Otritsatelnie chisla:\n" + arr_min) 
+    console.log("Polojitelnie chisla:\n" + arr_max) 
+    console.log(arr.length - (arr_max.length + arr_min.length)) 
+ 
+</script>

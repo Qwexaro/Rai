@@ -1,0 +1,40 @@
+<script>
+    let arr = new Array(3) // sozdai massiv na 10
+    let out = "\n"
+    // j - za igrek
+    // i - za iks
+    // shtob obratitsa k odnomu isp 2
+    let sum = 0
+    let min = 0
+    let max = 0
+   
+    for(let i = 0; i < arr.length; i++)
+    {
+
+        for(let j = 0; arr.length; j++)
+        {
+            arr[i][j] = Math.floor(Math.random()*41-20)   // pervi - stroka, vtoroi - stolbets
+            out += arr[i][j] + "\t" // tabul po osi y
+
+            if(arr[i][j] < min)
+            {
+
+                min = arr[i][j]
+
+            }
+            if(arr[i][j] > max)
+            {
+
+                max = arr[i][j]
+
+            }
+            sum += arr[i][j]
+        }
+        out += "\n\n" // tabul po osi x
+    }
+
+    console.log(out)
+    console.log(min)
+    console.log(max)
+    console.log(sum)
+</script>

@@ -1,0 +1,84 @@
+<script>
+
+    // let sum = 1
+    // sum = sum * num
+// 
+    // while(+prompt() > 0)
+    // {
+// 
+    // }
+    // for(let i = 1; i < 100; i = i * 2 )
+    // {S
+        // console.log(i)
+    // }
+
+    // pervoe zadanie
+
+    for(let i = 1; i < 11; i++)
+    {
+        console.log(i + " hello, World!")
+    }
+
+    // vtoroe zadanie
+
+    kolechko = +prompt("Vvedi kolichestvo vivodov hello world")
+    for(let i = 1; i < kolechko + 1; i++)
+    {
+        alert(i + "Hello world")
+    }
+
+    // tretie zadanie
+
+    diapozonische_1 = +prompt("Vvedi pervu tsifru diapozona")
+    diapozonische_2 = +prompt("Vvedi konets diapozona")
+    for(let i = diapozonische_1; i < diapozonische_2 + 1; i++)
+    {
+        alert(i)
+    }
+
+    // chetvertoe zadanie
+
+    let diapozonische_3 = +prompt("Vvedi pervoe")
+    let diapozonische_4 = +prompt("Vvedi vtoroe")
+    let sum = 0, mult = 1
+    for(let i = diapozonische_3; i < diapozonische_4 + 1; i++)
+    {
+        sum + i;
+        mult * i;
+    }
+    console.log(sum + " " + mult)
+    
+    // 5
+    let bum = 0; sam = 0
+    while(bum>=0){
+        bum = +prompt("Vvedi chislo")
+        sam+=bum
+    }
+    alert(sam)
+
+    // 6
+
+    
+    let num, min, max;
+    num = min = max = +prompt("Vvedi")
+    while(num!=0)
+    {
+        if(num>max) max = num
+        if(num < min) min = num
+        num=+prompt("Vvedi chislo")
+    }
+    alert("min = " + min + ", max = " + max)
+</script>
+
+<!-- 
+//
+//     let num, min = 0, max = 0;
+//     for(let i=0;i<4;i++)
+//     {
+//         num = +prompt("Vvedi chislo")
+//         if(i==0) min = max = num 
+//         if(num>max) max = num
+//         if(num < min) min = num
+//     }
+//     alert("min = " + min + ", max = " + max)
+//  -->

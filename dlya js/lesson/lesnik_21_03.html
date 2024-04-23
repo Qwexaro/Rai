@@ -1,0 +1,51 @@
+<script>
+    let souse = +prompt("Vvedi nomer sousa kotori ti hochesh: " + " Horoshi - 1 " + "Vozdusni - 2 ")
+    let napitki = +prompt("Vvedi nomer jelonogo nopitka: " + "Gaziman - 1 " + " Voda - 2 " + " Nu vkusni - 3 ")
+    let minyushka = +prompt("Vvedi nomer jelannoi pitsi: " + "Pepironi - 1 " +  "Ananasovaya - 2 " + "Vkusnaya - 3 " + "Originalnaya - 4")
+    switch(minyushka)
+    {
+        case 1:
+            alert("Vi kupili pepironi")
+            break
+        case 2:
+            alert("Vi kupili ananasnuyu pitsu")
+            break
+        case 3:
+            alert("Vi kupili vkusnuyu pitsu")
+            break
+        case 4:
+            alert("Vi kupili originalnyu pitsu")
+        case 0:
+            alert("Vi niche ne zakazali na pitsu")
+            break
+    }
+    switch(napitki)
+    {
+        case 1:
+            alert("Vi vikupili Gaziman")
+            break
+        case 2:
+            alert("Vi podkupili Vodu")
+            break
+        case 3:
+            alert("Vi kupili Vkusni napitok")
+            break
+        case 0:
+            alert("Vi ne kupili napitok")
+            break
+    }
+    switch(souse)
+    {
+        case 1:
+            alert("U vas teper horoshi sous")
+            break
+        case 2:
+            alert("U vas vozduh")
+            break
+        case 0:
+            alert("Vi ne kupili sous")
+            break
+    }
+    
+    alert("Vash check po nomeram: " + "sous nomer - " + souse +" napitki nomer - "+ napitki +" pizza nomer - "+ minyushka)
+</script>

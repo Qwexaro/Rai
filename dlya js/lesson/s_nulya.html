@@ -1,0 +1,73 @@
+<script>
+    // pervoe zdanie
+
+    let pervi_num = +prompt("Vvedi pervoe chsilo: ")
+    let vtoroi_num = +prompt("Vvedi vtoroe chislo: ")
+    if(pervi_num > vtoroi_num)
+    {
+        alert(pervi_num+'bolshe'+vtoroi_num)
+    }
+    else if(vtoroi_num > pervi_num)
+    {
+        alert(vtoroi_num+'bolshe'+pervi_num)
+    }
+    else
+    {
+        alert('Chisla ravni')
+    }
+    
+    //vtoroe zadanie
+
+    let novi_pervi = +prompt("Pervoe chislo")
+    let novi_vtoroe = +prompt("Vtoroe chislo")
+    let tretie = +prompt("tretie chsilo")
+    if(novi_pervi > novi_vtoroe && novi_pervi > tretie)
+    {
+        alert(novi_pervi+"bolshee chislo")
+    }
+    else if(novi_vtoroe > novi_pervi && novi_vtoroe > tretie)
+    {
+        alert(novi_vtoroe+"bolshee chislo")
+    }
+    else if(tretie > novi_pervi && tretie > novi_vtoroe)
+    {
+        alert(tretie+"bolshee chislo")
+    }
+    else if(tretie == novi_pervi && tretie == novi_vtoroe && novi_pervi == novi_vtoroe)
+    {
+        alert("Vse chisla ravni")
+    }
+
+    //tretie zadanie
+
+    let slovo = "Dagestan"
+    let vvod = prompt("Vvedi nashe slovo")
+    if(slovo == vvod)
+    {
+        alert("verno")
+    }
+    else
+    {
+        alert("Neverno")
+    }
+
+    //chetvertoe zadanie
+
+    let capral = prompt("Vvedi svoi zadavemi parol: ")
+    let vvedi_svoi = prompt("Vvedi svoi parol "+capral)
+    if(capral == vvedi_svoi)
+    {
+        let vtoroi_vvedi_svoi = prompt("Horosh! Vvedi parol esche raz")
+        if(capral == vtoroi_vvedi_svoi)
+        {
+            alert("Paroli sovpadayut")
+        }
+        else
+        alert("poprobui snachala")
+    }
+    else
+    {
+        alert("Poprobuyi zanava")
+    }
+
+</script>

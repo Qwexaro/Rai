@@ -1,0 +1,42 @@
+<script>
+
+    let arr = new Array(3);
+    let out = "\n"
+
+    for(let i = 0; i < arr.length; i++)
+    {
+
+        arr[i] = new Array(3)
+
+    }
+
+    for(let i = 0; i < arr.length; i++)
+    {
+
+        for(let j = 0; j < arr[i].length; j++)
+        {
+
+            arr[i][j] = Math.floor(Math.random()*41-20)
+            out += arr[i][j] + "\t"
+
+        }
+        out += "\n\n"
+
+    }
+    let sum = 0;
+
+    for(let i = 0; i < arr.length; i++)
+    {
+
+        for(let j = 0; j < arr[i].length; j++)
+        {
+
+            sum += arr[i][j]
+
+        }
+
+    }
+    console.log(out)
+    console.log("Сумма значений массива:", sum)
+
+</script>

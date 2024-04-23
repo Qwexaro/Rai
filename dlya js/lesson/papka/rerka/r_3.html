@@ -1,0 +1,30 @@
+<script> 
+     
+    let count = +prompt("Kolichestvo chisel: ") 
+    let arr = [] 
+    let sum = 0 
+         
+ 
+    for(let i = 0; i < count; i++) 
+    { 
+        arr[i] = Math.floor(Math.random()*10) 
+    } 
+ 
+    let min = arr[0] 
+    let max = arr[0] 
+ 
+    for(let j = 0; j < arr.length; j++) 
+    { 
+        sum += arr[j] 
+        if (arr[j] > max) max = arr[j] 
+        if (arr[j] < min) min = arr[j] 
+    } 
+         
+ 
+    alert(arr) 
+    alert(sum) 
+    alert(sum/count) 
+    alert(min) 
+    alert(max) 
+ 
+</script>

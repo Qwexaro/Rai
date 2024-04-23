@@ -1,0 +1,14 @@
+<script>
+    let pizza = 0, p_amount = 0, d_amount = 0, drinks = 0, sauce = 0;
+    switch(+prompt("1. 4 Sira\n2. Margarita\n3. Hlebna\n4. Arminskaya\n0. Nichego"))
+    {
+
+    case 1: pizza = "4 sira"; break
+    case 2: pizza = "Margaritka"; break
+    case 3: pizza = "Hlebna"; break
+    case 4: pizza = "Arminskaya"; break
+    default: pizza = "Bez pizzi"; break        
+    }
+    if(pizza != "Bez pizzi") p_amount = +prompt("Vvedi kolichestvo")
+    alert("Vash zakaz: " + p_amount + " sht. pizzi " + pizza)
+</script>

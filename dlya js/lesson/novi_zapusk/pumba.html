@@ -1,0 +1,93 @@
+
+<script>
+    // pervoe zadanie (sdelano)
+     
+    // let zapros = +prompt("Введи количество чисел для генерации")
+    // let arr = new Array(zapros)
+    // for(let i = 0; i < arr.length; i++) arr[i] = Math.floor(Math.random()*21-10)
+    // console.log(arr)
+    // for (let i = 0; i < arr.length; i++)
+    // {
+    //     for(let j=0; j < arr.length-1; j++)
+    //     {
+    //         if(arr[j] > arr[j+1]){
+    //             let tmp = arr[j]
+    //             arr[j] = arr[j+1]
+    //             arr[j+1] = tmp
+    //         }
+    //     }
+    // }
+    // console.log(arr)
+
+</script>
+
+<!-- <script>
+
+    let zapros = +prompt("Введи количество чисел для генерации")
+    let diap_1 = +prompt("Введи начало диапозона")
+    let diap_2 = +prompt("Введи конец диапозона")
+    let arr = new Array(zapros)
+    for(let i = 0; i < arr.length; i++) arr[i] = Math.floor(Math.random()*(diap_2 + 1 -diap_1)+1)
+    console.log(arr)
+    alert("Сгенерированный массив: " + arr)
+    for (let i = 0; i < arr.length; i++)
+    {
+        for(let j=0; j < arr.length-1; j++)
+        {
+            if(arr[j] > arr[j+1]){
+                let tmp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = tmp
+            }
+        }
+    }
+    console.log(arr)
+    alert("Отсортированный массив: " + arr)
+</script> -->
+
+<script>
+    
+    let plusov = "+"
+    let minus = "-"
+    let zapros = +prompt("Введи количество чисел для генерации")
+    let diap_1 = +prompt("Введи начало диапозона")
+    let diap_2 = +prompt("Введи конец диапозона")
+    let arr = new Array(zapros)
+    for(let i = 0; i < arr.length; i++) arr[i] = Math.floor(Math.random()*(diap_2 + 1 -diap_1)+1)
+    console.log(arr)
+    alert("Сгенерированный массив: " + arr)
+    let operatsiya = prompt("Выбирите операцию - воз или убыв")
+    if(plusov == operatsiya){
+        for (let i = 0; i < arr.length; i++)
+        {
+            for(let j=0; j < arr.length-1; j++)
+            {
+                if(arr[j] > arr[j+1]){
+                    let tmp = arr[j]
+                    arr[j] = arr[j+1]
+                    arr[j+1] = tmp
+                }
+            }
+        }
+        console.log(arr)
+        alert("Отсортированный массив: " + arr)
+    }
+    else
+        for (let i = 0; i < arr.length; i++)
+        {
+            for(let j=0; j < arr.length-1; j++)
+            {
+                if(arr[j] < arr[j+1]){
+                    let tmp = arr[j]
+                    arr[j] = arr[j+1]
+                    arr[j+1] = tmp
+                }
+            }
+        }
+        console.log(arr)
+        alert("Отсортированный массив: " + arr)
+
+    
+    
+        
+</script>

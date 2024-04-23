@@ -1,0 +1,17 @@
+<script>
+    let arr = [0,4,5,11] //Massiv na osnove spiska
+    let empty_new_arr = new Array(10) //Pustoi massiv iz 10 elementov
+    let new_arr = new Array(4,[-1,-2,0,1]) //Massiv na 4 elementa na osnove spiska
+    for(let i=0;i<5;i++)
+        empty_new_arr[i] = +prompt("Vvedi chislo") //Zapolnenie s klaviaturi
+    for(let i=0;i<10;i++) //Zapolnenie indexami
+        empty_new_arr[i] = i
+    for(let i=0;i<10;i++) //Zapolnenie sluchainimi chislami
+        arr[i] = Math.floor(Math.random()*10)
+    console.log(arr)
+    let rand_arr = new Array(Math.floor(Math.random()*100))
+    for(let i=0;i<rand_arr.length;i++)
+        rand_arr[i] = Math.floor(Math.random()*10)
+    console.log(rand_arr)
+    
+</script>
